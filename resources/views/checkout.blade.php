@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>PayFast Checkout</title>
@@ -24,7 +25,7 @@
             background: #fff;
             padding: 40px 30px;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
         }
@@ -86,12 +87,13 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="checkout-card">
         <h1>Checkout</h1>
 
-        <form method="POST" action="#">
+        <form method="POST" action="{{ route('checkout.process') }}">
             @csrf
 
             <div class="form-group">
@@ -111,4 +113,5 @@
     </div>
 
 </body>
+
 </html>
